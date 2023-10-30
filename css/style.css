@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,600&display=swap");
-body {
-  background-color: aqua;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,600&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 * {
@@ -8,6 +12,279 @@ body {
   padding: 0px;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background-image: url("https://cdn.pixabay.com/photo/2016/01/09/18/27/camera-1130731_1280.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.header {
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  padding: 20px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 32px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.menu a {
+  position: relative;
+  font-size: 17px;
+  color: #efefef;
+  font-weight: 500;
+  text-decoration: none;
+  margin-left: 35px;
+}
+
+.menu a::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: #efefef;
+  transition: 0.2s;
+}
+
+.menu a:hover::before {
+  width: 100%;
+}
+
+@media (max-width: 700px) {
+  .header {
+    height: auto;
+  }
+  .menu a {
+    padding: 10px 10px;
+    display: block;
+  }
+}
+.titu {
+  text-align: center;
+  margin-top: 50px;
+  padding: 80px;
+  color: #fff;
+}
+
+.titu2 {
+  text-align: center;
+  margin-top: 50px;
+  color: #fff;
+}
+
+.carrusel {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.formadepago {
+  width: 20%;
+  margin: 0 auto;
+}
+
+.minibuscador a {
+  color: #fff;
+  font-size: 20px;
+  margin-top: 100px;
+  cursor: default;
+}
+
+.paises {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+}
+
+.pie-pagina {
+  width: 100%;
+  background-color: rgba(10, 20, 29, 0.8901960784);
+}
+
+.pie-pagina .grupo-1 {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  padding: 45px 0px;
+}
+
+.pie-pagina .grupo-1 .box figure {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pie-pagina .grupo-1 .box h2 {
+  color: #fff;
+  margin-bottom: 25px;
+  font-size: 25px;
+}
+
+.pie-pagina .grupo-1 .box p {
+  color: #efefef;
+  margin-bottom: 10px;
+}
+
+.pie-pagina .grupo-1 .red-social a {
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: #fff;
+  background-color: #0d2033;
+  text-align: center;
+}
+
+.pie-pagina .grupo-2 {
+  background-color: rgba(15, 36, 56, 0.2117647059);
+  padding: 15px 10px;
+  text-align: center;
+  color: #fff;
+}
+
+.pie-pagina .grupo-2 small {
+  font-size: 15px;
+}
+
+@media screen and (max-width: 800px) {
+  .pie-pagina .grupo-1 {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 35px 0px;
+  }
+}
+.tituP {
+  color: #fff;
+  text-align: center;
+  margin-top: 100px;
+  background-color: rgba(13, 32, 51, 0.1725490196);
+  margin-left: 300px;
+  margin-right: 300px;
+}
+
+.articulo {
+  color: #efefef;
+  width: 95%;
+  margin: 0 auto;
+  padding: 25px;
+  margin-bottom: 250px;
+  border: 1px solid #ccc;
+  background-color: rgba(15, 36, 56, 0.8784313725);
+}
+
+.formulario-viajes {
+  text-align: center;
+  background-color: #f3f3f3;
+  padding: 20px;
+  margin: 150px;
+  margin-bottom: 350px;
+}
+
+.formulario-viajes form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.formulario-viajes input {
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 200px;
+}
+
+.formulario-viajes button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.tituloV {
+  color: #fff;
+  text-align: center;
+  margin-top: 50px;
+  background-color: rgba(13, 32, 51, 0.1725490196);
+  margin-left: 300px;
+  margin-right: 300px;
+}
+
+.ilustracion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  margin-bottom: 200px;
+}
+
+.formulario {
+  width: 450px;
+  margin: auto;
+  background: rgba(13, 32, 51, 0.662745098);
+  padding: 10px 20px;
+  box-sizing: border-box;
+  margin-top: 20px;
+  border-radius: 6px;
+}
+
+.formulario h2 {
+  color: #efefef;
+  text-align: center;
+  margin: 0;
+  font-size: 30px;
+  margin-bottom: 20px;
+  font-family: monospace;
+}
+
+.formulario input, textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 7px;
+  box-sizing: border-box;
+  font-size: 16px;
+  border: none;
+}
+
+.formulario textarea {
+  min-height: 100px;
+  max-height: 200px;
+}
+
+.botone {
+  background-color: rgb(139, 29, 29);
+  color: #efefef;
+  padding: 20px;
+}
+
+@media (max-width: 480px) and (max-width: 576) {
+  form {
+    width: 100%;
+    height: auto;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
