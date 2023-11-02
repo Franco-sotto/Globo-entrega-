@@ -1,0 +1,33 @@
+.formulario-contactanos {
+    width: 400px;
+    margin: auto;
+    background:$color-fondo;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 7px;
+}
+
+.contactanos {
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    margin-bottom: 10px;
+
+}
+
+input, .textarea-contactanos {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: none;
+}
+
+.textarea-contactanos {
+    min-height: 100px;
+    max-height: 250px;
+    max-width: 100px;
+}

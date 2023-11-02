@@ -1,0 +1,62 @@
+body {
+    min-height: 100vh;
+    background-image: url('https://cdn.pixabay.com/photo/2016/01/09/18/27/camera-1130731_1280.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center center;
+    
+}
+
+
+.header {
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    .logo {
+        font-size: 32px;
+        color: #fff;
+        text-decoration: none;
+        font-weight: 700;
+    }
+    .menu a {
+        position: relative;
+        font-size: 17px;
+        color: #efefef;  
+        font-weight: 500;
+        text-decoration: none;
+        margin-left: 35px;
+       
+        }
+        
+    }
+
+    .menu a::before {
+        content: '';
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 0;
+        height: 3px;
+        background-color:  #efefef;
+        transition: .2s;
+    }
+    .menu a:hover::before {
+        width: 100%;
+    }
+@media (max-width:700px){
+    .header{
+        height: auto;
+        
+        
+    }
+    .menu a {
+        padding: 10px 10px;
+        display: block;
+
+    }
+}

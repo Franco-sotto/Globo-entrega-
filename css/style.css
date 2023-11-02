@@ -7,13 +7,6 @@
   font-family: "Poppins", sans-serif;
 }
 
-* {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
-
 body {
   min-height: 100vh;
   background-image: url("https://cdn.pixabay.com/photo/2016/01/09/18/27/camera-1130731_1280.jpg");
@@ -32,15 +25,13 @@ body {
   align-items: center;
   z-index: 100;
 }
-
-.logo {
+.header .logo {
   font-size: 32px;
   color: #fff;
   text-decoration: none;
   font-weight: 700;
 }
-
-.menu a {
+.header .menu a {
   position: relative;
   font-size: 17px;
   color: #efefef;
@@ -73,43 +64,6 @@ body {
     display: block;
   }
 }
-.titu {
-  text-align: center;
-  margin-top: 50px;
-  padding: 80px;
-  color: #fff;
-}
-
-.titu2 {
-  text-align: center;
-  margin-top: 50px;
-  color: #fff;
-}
-
-.carrusel {
-  width: 50%;
-  margin: 0 auto;
-}
-
-.formadepago {
-  width: 20%;
-  margin: 0 auto;
-}
-
-.minibuscador a {
-  color: #fff;
-  font-size: 20px;
-  margin-top: 100px;
-  cursor: default;
-}
-
-.paises {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 50px;
-}
-
 .pie-pagina {
   width: 100%;
   background-color: rgba(10, 20, 29, 0.8901960784);
@@ -174,117 +128,148 @@ body {
     padding: 35px 0px;
   }
 }
-.tituP {
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.titu {
+  text-align: center;
+  margin-top: 50px;
+  padding: 80px;
   color: #fff;
-  text-align: center;
-  margin-top: 100px;
-  background-color: rgba(13, 32, 51, 0.1725490196);
-  margin-left: 300px;
-  margin-right: 300px;
+  background-color: rgba(10, 20, 29, 0.568627451);
 }
 
-.articulo {
-  color: #efefef;
-  width: 95%;
+.titu2 {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  color: #fff;
+}
+
+.carrusel {
+  width: 50%;
   margin: 0 auto;
-  padding: 25px;
-  margin-bottom: 250px;
-  border: 1px solid #ccc;
-  background-color: rgba(15, 36, 56, 0.8784313725);
 }
 
-.formulario-viajes {
-  text-align: center;
-  background-color: #f3f3f3;
+.formadepago {
+  width: 20%;
+  margin: 0 auto;
+}
+
+.minibuscador a {
+  color: #0e0909;
+  font-size: 20px;
+  margin-top: 100px;
+  cursor: default;
+}
+
+.paises {
+  color: #0d2033;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+}
+
+.container {
+  max-width: 400px;
+  margin: 0 auto;
   padding: 20px;
-  margin: 150px;
-  margin-bottom: 350px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin-bottom: 100px;
 }
 
-.formulario-viajes form {
+h1 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+input, select {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+input[type=submit] {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.gallery {
+  list-style: none;
+  padding: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.formulario-viajes input {
-  padding: 10px;
+.gallery li {
   margin: 10px;
+  margin-bottom: 25px;
+}
+
+.gallery img {
+  width: 200px;
+  height: 150px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  width: 200px;
+  transition: transform 0.2s;
 }
 
-.formulario-viajes button {
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+.gallery img:hover {
+  transform: scale(1.1);
 }
 
-.tituloV {
-  color: #fff;
-  text-align: center;
-  margin-top: 50px;
-  background-color: rgba(13, 32, 51, 0.1725490196);
-  margin-left: 300px;
-  margin-right: 300px;
-}
-
-.ilustracion {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 300px;
-  margin-bottom: 200px;
-}
-
-.formulario {
-  width: 450px;
+.formulario-contactanos {
+  width: 400px;
   margin: auto;
-  background: rgba(13, 32, 51, 0.662745098);
+  background: rgba(10, 20, 29, 0.568627451);
   padding: 10px 20px;
   box-sizing: border-box;
   margin-top: 20px;
-  border-radius: 6px;
+  border-radius: 7px;
 }
 
-.formulario h2 {
-  color: #efefef;
+.contactanos {
+  color: #fff;
   text-align: center;
   margin: 0;
   font-size: 30px;
-  margin-bottom: 20px;
-  font-family: monospace;
+  margin-bottom: 10px;
 }
 
-.formulario input, textarea {
+input, .textarea-contactanos {
   width: 100%;
   margin-bottom: 20px;
   padding: 7px;
   box-sizing: border-box;
-  font-size: 16px;
+  font-size: 17px;
   border: none;
 }
 
-.formulario textarea {
+.textarea-contactanos {
   min-height: 100px;
-  max-height: 200px;
-}
-
-.botone {
-  background-color: rgb(139, 29, 29);
-  color: #efefef;
-  padding: 20px;
-}
-
-@media (max-width: 480px) and (max-width: 576) {
-  form {
-    width: 100%;
-    height: auto;
-  }
+  max-height: 250px;
+  max-width: 100px;
 }
 
 /*# sourceMappingURL=style.css.map */

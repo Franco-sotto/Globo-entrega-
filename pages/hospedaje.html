@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href=../css/style.css>
     <script src="https://kit.fontawesome.com/0fd75cc661.js" crossorigin="anonymous"></script>
-    <title>traveler pack</title>
+    <title>Globo-hospedaje</title>
 </head>
 
 
@@ -24,8 +24,65 @@
             <a href="./pages/contactanos.html">Contacto</a>
         </nav>
     </header>
-    
-   
+    <main>
+      <h1 class="titu">
+        Tu pasaporte es Tu libro de aventuras
+      </h1>
+      <div>
+        <ul class="gallery">
+          <li>
+              <img src="../asset/hotel1.jpg" alt="Imagen 1">
+          </li>
+          <li>
+              <img src="../asset/hotel3.jpg" alt="Imagen 2">
+          </li>
+          <li>
+              <img src="../asset/hotel2.jpg" alt="Imagen 3">
+          </li>
+          
+      </ul>
+      </div>
+      <div>
+        <ul class="gallery">
+          <li>
+              <img src="../asset/montaña.jpg" alt="Imagen 1">
+          </li>
+          <li>
+              <img src="../asset/isla.jpg" alt="Imagen 2">
+          </li>
+          <li>
+              <img src="../asset/aurora-1197753_640.jpg" alt="Imagen 3">
+          </li>
+          
+      </ul>
+      </div>
+      
+      <div class="container">
+        <h3>Buscar hospedaje</h3>
+        <form>
+            <label for="origen">Origen:</label>
+            <input type="text" id="origen" name="origen" required>
+
+            <label for="destino">Destino:</label>
+            <input type="text" id="destino" name="destino" required>
+
+            <label for="fecha_salida">Fecha de Salida:</label>
+            <input type="date" id="fecha_salida" name="fecha_salida" required>
+
+            <label for="num_pasajeros">Número de Pasajeros:</label>
+            <input type="number" id="num_pasajeros" name="num_pasajeros" min="1" required>
+
+            <label for="clase">Clase de habitacion:</label>
+            <select id="clase" name="clase">
+                <option value="economica">Económica</option>
+                <option value="negocios">Recomendada</option>
+                <option value="primera">Primera Clase</option>
+            </select>
+            <input type="submit" value="Buscar Hospedaje">
+        </form>
+    </div>
+
+    </main>
     <footer class="pie-pagina">
       <div class="grupo-1">
         <div class="box">
@@ -35,8 +92,8 @@
         </div>
         <div class="box">
           <h2>SOBRE NOSOTROS</h2>
-          <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, impedit?</P>
-          <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, impedit?</P>
+          <P>Somos un intermediario entre vos y las mejores ofertas para que puedas realizar tu viaje ideal</P>
+          <P>Con Globo podes comparar con miles de empresas para saber lo mejor que te convenga</P>
         </div>
         <div class="box">
           <h2>SIGUENOS</h2>
