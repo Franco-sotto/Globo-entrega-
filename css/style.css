@@ -239,37 +239,52 @@ input[type=submit] {
   transform: scale(1.1);
 }
 
-.formulario-contactanos {
-  width: 400px;
-  margin: auto;
-  background: rgba(10, 20, 29, 0.568627451);
-  padding: 10px 20px;
-  box-sizing: border-box;
-  margin-top: 20px;
-  border-radius: 7px;
-}
-
-.contactanos {
-  color: #fff;
-  text-align: center;
-  margin: 0;
-  font-size: 30px;
-  margin-bottom: 10px;
-}
-
-input, .textarea-contactanos {
+.card-asistencia {
   width: 100%;
-  margin-bottom: 20px;
-  padding: 7px;
-  box-sizing: border-box;
-  font-size: 17px;
-  border: none;
+  max-width: 1200px;
+  height: 430px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 50px;
 }
 
-.textarea-contactanos {
-  min-height: 100px;
-  max-height: 250px;
-  max-width: 100px;
+.card-asistencia .card-plan {
+  width: 330px;
+  height: 430px;
+  border-radius: 8px;
+  box-shadow: 0 2px 2px rgba 0, 0, 0, 0.2;
+  overflow: hidden;
+  margin: 20px;
+  text-align: center;
+  transition: all 0.25s;
+}
+
+.card-asistencia .card-plan:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 12px 16px rgb 0, 0, 0, 0.2;
+}
+
+.card-asistencia .card-plan img {
+  width: 330px;
+  height: 220px;
+}
+
+.card-asistencia .card-plan h4 {
+  font-weight: 600;
+}
+
+.card-asistencia .card-plan p {
+  padding: 0 1rem;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.card-asistencia .card-plan a {
+  font-weight: 500;
+  text-decoration: none;
+  color: rgba(10, 20, 29, 0.568627451);
 }
 
 /*# sourceMappingURL=style.css.map */
